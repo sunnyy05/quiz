@@ -1,4 +1,7 @@
 import streamlit as st
+import gspread
+from oauth2client.service_account import ServiceAccountCredentials
+from datetime import datetime
 
 
 st.title("Quiz on Units")
@@ -35,10 +38,18 @@ for i, q in enumerate(questions):
     ans = st.text_input(f"Q{i+1}: {q['Q']} (Dimension: {q['dimension']})", key=f"q{i}")
     user_answers.append(ans.strip().lower())
 
+name = st.text_input("Enter your name:")
+
 if st.button("Submit Quiz"):
     for i, q in enumerate(questions):
         if user_answers[i] == q["answer"].lower():
             score += 1
+    if name:
+    save_score_to_gsheet(name, score)
+    st.success("Your score has been saved.")
+else:
+    st.warning("Please enter your name to save your score.")
+
 
     st.markdown(f"Your Score: {score}/{len(questions)}")
 
@@ -53,3 +64,13 @@ if st.button("Submit Quiz"):
 
     st.markdown("---")
     st.balloons()
+    
+    def save_score_to_gsheet(name, score):
+    scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
+    creds = ServiceAccountCredentials.from_json_keyfile_name("quizappsheet-96b7d61922af.json", scope)
+    client = gspread.authorize(creds)
+    sheet = client.open("Quiz Scores").worksheet("responses")
+    
+    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    sheet.append_row([now, name, score])
+
