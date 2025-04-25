@@ -67,7 +67,7 @@ else:
     
     def save_score_to_gsheet(name, score):
     scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-    creds = ServiceAccountCredentials.from_json_keyfile_name("quizappsheet-96b7d61922af.json", scope)
+    creds = ServiceAccountCredentials.from_json_keyfile_name("quizapp-457916-970476aa6c31.json", scope)
     client = gspread.authorize(creds)
     sheet = client.open("Quiz Scores").worksheet("responses")
     
