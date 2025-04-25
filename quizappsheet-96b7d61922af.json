@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "quizappsheet",
+  "private_key_id": "96b7d61922af5d3e9d88717415b2fe9fb5c032df",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDAj6ppx4Ckw3sY\nfyjj5qsckP78dljMAaoz8NXatHc4YHCwTRky/GyA+bbNf4GylGTNFaGMFt76VB+U\n2b0nrZsYHxOdwZJd5XTPjVz1gnadwu7bZKeAewDzLFSE35FiODctOlLkBNK5Qcta\nffocOlfBj+N9FFrcEjOqe4SjMnFOozzylAFAA+mgcWyksAqMqasoj7ZiqJzthyuu\n39YTku4waW9AVvH3hpJoz92Ag7q7g5NqWohye2i2fgGQTqlmk/bXXDdSOzZfcrCS\npccIj5K8igf8zXapKwjC8NjJToEtd1Zh88qsEuk7Az5rAMhyqCO6y6Mn6sRIx6Xl\nvYRv8qaxAgMBAAECggEAAwH0OJjW8k5zI94V4KA8NqP+nghAy+9SJDpaS/r/Eozq\nz/8rQMTDLIPU0XQR42tp1/euWRBnObvCJ31GLtRsfLZVnR5DSp8HVtXb8cs42rdZ\nlppYC75RpDzDY9XpJPIPOOPNC+6Z/6pG6rq17nsZtYGpd/JUXOmzB4CjMor3lwhi\nUpRcsghGVP0tAWCnrla6KS5D6dXKM2G8v07t05knhSJJoNJbp2G3h8h3ppL35WPN\n/UoRggKsVurPTuRGWtQ8nUwIvokm3/L4vtvUujgCSb/HOfEjHxF0HeGx8/i3Jfjs\njv7QABugBbiMQfTn8galokvXtggYu8ihZQ17W1fo3wKBgQDm2gOVPjoy7PhzR2l2\n6jAPXVCet51p9ctyOBflrvRO93Sy6MWgA6WjozXGzqUWWalEFMLUhsXVHnPFmk5n\nQmqrxLQReuuFhwoEDRulm7yoSP/q3B+RihBbqSZOOBCCPwPN6Sg+1XFCOTN+KGJ6\nb1ubz6hcooAWS9IKVdSlOXUkhwKBgQDVic8bD31o0x15f4zo/V6fggAfan9uCO+9\nQJmx7JCUSJYbkBybRiy1OxrOGP+OgaxJgJXtH5T+TbKOsc92GQqowGiO2XqrEnGw\nYk1SJN4l5GgUUL0mnTIXDSHLsca/0DFBYKYz//dCex7DzPp3qntINkedCRnpI+km\numMpHzzhBwKBgEY/m42D1SQAFo7F8WL9WsiiJdFWoLFI2bMVPLhpJ/ELvlhfGxxZ\nX8NO/CNWaMhHWoncI3mW1YbH8IT2MtubS2ifwAf9tsP4VuTqtDoODTfMlwv6FiUs\ntVOfQofU6bkowdicFeIhA4kabP/7/BOz5VWhuGMQFBg01GLOwZnRxULrAoGAVAB7\nVYTZa8QpAyO3FeyeLZdhXvpxGKMxVDy2eXS7R2nqivs9FaQccErI96yD09aVJPEN\niZNz9DoydMnj9+xP8iSGvTM2e1etG5sAGcFhFnzsqJk+X5NVIhZLZisQKWLIDZTs\nrOYTqbZvWs0m9q49AyI/N7pd1AYJcO+/lGyycT8CgYBbrLFZPnNHwydtU8iuQXm5\n89DW5tk6we720DVkiOKmraEp4s8YcTs57HPFmQ045JP0QL7G6jr1HZm2sLRo/T0x\nW/uU9bWXWMZN725A2h8G0AgL/MJnZEVlNA/4Hqmsju5s3WbPsc1q8ashbw81PutG\nSRrqTlYV2hR5N/JEdBwabA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "quiz-writer@quizappsheet.iam.gserviceaccount.com",
+  "client_id": "105801640151011593600",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/quiz-writer%40quizappsheet.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
