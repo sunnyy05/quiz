@@ -37,6 +37,7 @@ questions = [
     {"Q": "SI unit to measure force per unit area", "dimension": "ML^-1T^-2", "answer": "Pa"},
     {"Q": "This unit is used to measure frequency.", "dimension": "T^-1", "answer": "Hz"}
 ]
+name = st.text_input("Enter your name:")
 
 user_answers = []
 score = 0
@@ -48,7 +49,6 @@ for i, q in enumerate(questions):
     ans = st.text_input(f"Q{i+1}: {q['Q']} (Dimension: {q['dimension']})", key=f"q{i}")
     user_answers.append(ans.strip().lower())
 
-name = st.text_input("Enter your name:")
 
 if st.button("Submit Quiz"):
     for i, q in enumerate(questions):
