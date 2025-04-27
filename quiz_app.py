@@ -45,8 +45,8 @@ if st.button("Submit Quiz"):
         if user_answers[i] == q["answer"].lower():
             score += 1
     if name:
-    save_score_to_gsheet(name, score)
-    st.success("Your score has been saved.")
+        save_score_to_gsheet(name, score)
+        st.success("Your score has been saved.")
 else:
     st.warning("Please enter your name to save your score.")
 
