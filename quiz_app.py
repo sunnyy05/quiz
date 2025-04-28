@@ -1,19 +1,5 @@
 import streamlit as st
-import gspread
-from oauth2client.service_account import ServiceAccountCredentials
-from datetime import datetime
 
-# Function to save the score to Google Sheets
-def save_score_to_gsheet(name, score):
-    scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-    creds = ServiceAccountCredentials.from_json_keyfile_name("quizapp-457916-970476aa6c31.json", scope)
-    client = gspread.authorize(creds)
-    sheet = client.open("Quiz Scores").worksheet("responses")
-    
-    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    sheet.append_row([now, name, score])
-
-# --- Main App ---
 
 st.title("Quiz on Units")
 
@@ -37,7 +23,6 @@ questions = [
     {"Q": "SI unit to measure force per unit area", "dimension": "ML^-1T^-2", "answer": "Pa"},
     {"Q": "This unit is used to measure frequency.", "dimension": "T^-1", "answer": "Hz"}
 ]
-name = st.text_input("Enter your name:")
 
 user_answers = []
 score = 0
@@ -55,22 +40,15 @@ if st.button("Submit Quiz"):
         if user_answers[i] == q["answer"].lower():
             score += 1
 
-    if name:
-        save_score_to_gsheet(name, score)
-        st.success("Your score has been saved.")
-    else:
-        st.warning("Please enter your name to save your score.")
-
-    # Show results
     st.markdown(f"### Your Score: {score}/{len(questions)}")
 
     if score == 10:
-        st.success("🌟 You got **A+** grade in this game!")
+        st.success(" You got **A+** grade in this game!")
     elif score >= 7:
-        st.success("🎉 You got **A** grade in this game!")
+        st.success(" You got **A** grade in this game!")
     elif score >= 5:
-        st.info("🙂 You got **B** grade in this game.")
+        st.info(" You got **B** grade in this game.")
     else:
-        st.warning("😕 You need to work a little harder. Keep practicing!")
+        st.warning(" You need to work a little harder.")
 
     st.balloons()
